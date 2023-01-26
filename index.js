@@ -28,7 +28,8 @@ app.get("/api/kurs/dollar", (req, res) => {
     content.find(".rPF6Lc").each((id, el) => {
       obj.nilai = $(".kf1m0")
         .find(".YMlKec")
-        .text();
+        .text()
+        .replace(/\.\d+$/, "");
       console.log(el);
     });
 
@@ -50,7 +51,8 @@ app.get("/api/kurs/euro", (req, res) => {
     content.find(".rPF6Lc").each((id, el) => {
       obj.nilai = $(".kf1m0")
         .find(".YMlKec")
-        .text();
+        .text()
+        .replace(/\.\d+$/, "");
     });
 
     obj.author = "Fadila Fitra";
